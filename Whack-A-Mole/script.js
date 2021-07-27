@@ -47,7 +47,7 @@ function startGame() {
     level++;
     drawTable();
     disable();
-  }, 2000);
+  }, 10000);
 }
 
 function countScore() {
@@ -57,7 +57,6 @@ function countScore() {
 }
 function bonk(e) {
   if (!isDisable) return;
-
   if (!e.isTrusted) return; // cheater!
   score = score + 1;
   this.parentNode.classList.remove('up');
